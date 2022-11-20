@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEDBE1"
+    android:padding="15dp"
+    tools:context=".AddActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+    <EditText
+        android:id="@+id/title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B37E7E"
+        android:background="@android:color/transparent"
+        android:hint="title">
+    </EditText>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#B68888"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:hint="description">
+        </EditText>
+
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveNote"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:src="@drawable/save_img"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
